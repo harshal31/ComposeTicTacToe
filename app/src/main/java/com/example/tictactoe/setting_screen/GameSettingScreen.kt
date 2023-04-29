@@ -50,7 +50,7 @@ fun GameSettingScreen() {
     val (gameSetting, shouldDisplayDialog) = viewModel.displayState.value
 
     if (shouldDisplayDialog && gameSetting != null) {
-        Log.d("state chane", "state change for ${gameSetting?.settingName}")
+        Log.d("state chane", "state change for ${gameSetting.settingName}")
         OpenColorPicker(gameSetting = gameSetting, viewModel = viewModel)
     }
 
@@ -62,7 +62,7 @@ fun GameSettingScreen() {
                     gameSetting = gameSetting,
                     Modifier
                         .fillMaxWidth()
-                        .wrapContentHeight(), viewModel
+                        .wrapContentHeight()
                 ) {
                     viewModel.displayState.value = Pair(gameSetting, true)
                 }
@@ -72,9 +72,7 @@ fun GameSettingScreen() {
 }
 
 @Composable
-fun GameSettingItem(
-    gameSetting: GameSetting, modifier: Modifier, viewModel: GameSettingViewModel, onClick: (GameSetting) -> Unit
-) {
+fun GameSettingItem(gameSetting: GameSetting, modifier: Modifier, onClick: (GameSetting) -> Unit) {
     Column(
         modifier = Modifier
             .fillMaxWidth()

@@ -5,7 +5,6 @@ import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.lifecycle.ViewModel
-import com.example.tictactoe.game_utils.TicTacToe
 import com.example.tictactoe.game_utils.TicTacToeUtils
 import com.example.tictactoe.model_class.TicBox
 import com.example.tictactoe.model_class.TicTacToeGameState
