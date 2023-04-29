@@ -1,6 +1,3 @@
-/**
- * Copyright 2023 Lenovo, All Rights Reserved *
- */
 package com.example.tictactoe.model_class
 
 import androidx.compose.ui.graphics.Color

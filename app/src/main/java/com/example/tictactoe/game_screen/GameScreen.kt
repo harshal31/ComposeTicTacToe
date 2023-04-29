@@ -1,6 +1,3 @@
-/**
- * Copyright 2023 Lenovo, All Rights Reserved *
- */
 package com.example.tictactoe.game_screen
 
 import android.util.Log
